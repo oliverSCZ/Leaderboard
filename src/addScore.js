@@ -6,7 +6,7 @@ const addScoreBox = () => {
   addTitle.classList.add('display-4');
   divAddScore.appendChild(addTitle);
   const divForm = document.createElement('form');
-  divForm.classList.add('d-flex','flex-column');
+  divForm.classList.add('d-flex', 'flex-column');
   const inputName = document.createElement('input');
   inputName.classList.add('form-control', 'my-3');
   inputName.placeholder = 'Your Name';
@@ -22,6 +22,5 @@ const addScoreBox = () => {
   divAddScore.appendChild(divForm);
   return divAddScore;
 };
-
-
+// eslint-disable-next-line import/prefer-default-export
 export { addScoreBox };

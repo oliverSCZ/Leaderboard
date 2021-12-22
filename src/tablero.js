@@ -48,7 +48,7 @@ const displayTable = () => {
               </tr>`;
   scoreTable.appendChild(tableBody);
   divScore.appendChild(scoreTable);
-  
   return divScore;
 };
+// eslint-disable-next-line import/prefer-default-export
 export { displayTable };
