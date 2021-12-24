@@ -16,15 +16,15 @@ export const sendNewData = (username, score) => {
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
   })
     .then((data) => {
-      if (data.ok){
+      if (data.ok) {
         renderMsg('Succesfully added a new record');
       } else {
-        throw new Error(`No response: ${data.status}`);
+        throw new Error('No response: ${data.status}');
       }
-    })
-    .catch((err) => {
-      renderMsg('Something went wrong: ${err.message}. Try again');
-    })
+    });
+    // .catch((err) => {
+    //   renderMsg('Something went wrong: ${err.message}. Try again');
+    // })
 };
 
 export const receiveData = async () => {
