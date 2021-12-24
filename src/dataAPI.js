@@ -22,9 +22,6 @@ export const sendNewData = (username, score) => {
         throw new Error('No response: ${data.status}');
       }
     });
-    // .catch((err) => {
-    //   renderMsg('Something went wrong: ${err.message}. Try again');
-    // })
 };
 
 export const receiveData = async () => {
