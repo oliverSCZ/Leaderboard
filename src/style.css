@@ -1,4 +1,96 @@
-.display-1 {
-  color: rebeccapurple;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 20vh;
+  width: 100%;
+}
+
+.title-header {
+  padding: 5vh 30px;
+  font-size: 50px;
+}
+
+.hero {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 7%;
+}
+
+.sections {
+  width: 40%;
+}
+
+.top-section {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-section {
+  font-size: 40px;
+}
+
+.btn {
+  height: 30px;
+  width: 180px;
+  cursor: pointer;
+}
+
+.scores-container {
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  border: 2px solid black;
+}
+
+.specific-score {
+  height: 30px;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 20px;
+  border: 1px solid grey;
+}
+
+.specific-score.specific-score:nth-child(2n) {
+  background-color: silver;
+}
+
+.add-score-title {
+  height: 20%;
+  width: 100%;
   text-align: center;
+  padding-top: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input {
+  height: 30px;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.submit-btn {
+  align-self: flex-end;
+}
+
+.display-msg {
+  margin-top: 30px;
 }
