@@ -19,7 +19,7 @@ export const sendNewData = (username, score) => {
       if (data.ok) {
         renderMsg('Succesfully added a new record');
       } else {
-        throw new Error('No response: ${data.status}');
+        throw new Error(`No response: ${data.status}`);
       }
     });
 };
