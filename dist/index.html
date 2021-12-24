@@ -8,9 +8,31 @@
     <title>LeaderBoard</title>
     <script src="https://unpkg.com/lodash@4.17.20"></script>
 <script defer src="index.js"></script></head>
-<body>
-    <div id="title-h1"></div>
-    <div id="container"></div>
-    <script src="/src/index.js"></script>
-</body>
+ <body>
+    <header class="header">
+      <h1 class="title-h1">Leaderboard</h1>
+    </header>
+    <main class="hero">
+      <section class="show-score-section sections">
+        <div class="top-section">
+          <h2 class="title-section">Recent scores</h2>
+          <button type="button" class="btn refresh-btn">Refresh</button>
+        </div>
+        <ul class="scores-container"></ul>
+      </section>
+      <section class="add-score-section sections">
+        <h2 class="title-section add-score-title">Add your score</h2>
+        <form class="form">
+          <input type="text" class="input name-input" placeholder="Your name" />
+          <input
+            type="number"
+            class="input score-input"
+            placeholder="Your score"
+          />
+          <button type="submit" class="btn submit-btn">Submit</button>
+        </form>
+        <span class="display-msg"></span>
+      </section>
+    </main>
+  </body>
 </html>
