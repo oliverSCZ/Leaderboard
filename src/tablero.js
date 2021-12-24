@@ -25,7 +25,7 @@ const displayTable = () => {
     'border-secondary',
   );
   const tableBody = document.createElement('tbody');
-  const oliver = "hola";
+  const oliver = 'hola';
   tableBody.innerHTML = `
     <tr>
         <td>${oliver}: 100</td>

@@ -1,8 +1,7 @@
-// eslint-disable-next-line
 import _ from 'lodash';
 import './style.css';
+// eslint-disable-next-line
 import { sendNewData, receiveData } from './dataAPI';
-
 
 export const scoresContainer = document.querySelector('.scores-container');
 const nameInput = document.querySelector('.name-input');
@@ -36,16 +35,3 @@ window.onload = () => {
     receiveData();
   });
 };
-
-// fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
-//   method: 'POST',
-//   body: JSON.stringify({
-//     "name": 'My cool new game',
-//   }),
-//   headers: {
-//     'Content-type': 'application/json; charset=UTF-8',
-//   },
-// })
-//   .then((response) => response.json())
-//   .then((json) => console.log(json));
-  
