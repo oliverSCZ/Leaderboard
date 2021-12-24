@@ -9,11 +9,12 @@ const displayTable = () => {
   divLeft.appendChild(recentScoreT);
   const refreshBtn = document.createElement('button');
   refreshBtn.innerHTML = 'Refresh';
-  refreshBtn.classList.add('btn-secondary');
+  refreshBtn.classList.add('btn-secondary', 'refresh-btn');
   divLeft.appendChild(refreshBtn);
   divScore.appendChild(divLeft);
   const scoreTable = document.createElement('table');
   scoreTable.classList.add(
+    'scores-container',
     'table',
     'table-dark',
     'table-striped',
@@ -24,28 +25,11 @@ const displayTable = () => {
     'border-secondary',
   );
   const tableBody = document.createElement('tbody');
+  const oliver = "hola";
   tableBody.innerHTML = `
     <tr>
-                <td>Name: 100</td>
-              </tr>
-              <tr>
-                <td>Name: 200</td>
-              </tr>
-              <tr>
-                <td>Name: 500</td>
-              </tr>
-              <tr>
-                <td>Name: 700</td>
-              </tr>
-              <tr>
-                <td>Name: 150</td>
-              </tr>
-              <tr>
-                <td>Name: 770</td>
-              </tr>
-              <tr>
-                <td>Name: 400</td>
-              </tr>`;
+        <td>${oliver}: 100</td>
+     </tr>`;
   scoreTable.appendChild(tableBody);
   divScore.appendChild(scoreTable);
   return divScore;
