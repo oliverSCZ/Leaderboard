@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-cycle
-import { populateContainer } from './index';
+import { populateContainer } from './index.js';
 
 const displayMsg = document.querySelector('.display-msg');
 const renderMsg = (msg) => {
